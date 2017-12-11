@@ -21,7 +21,7 @@ class FilteredList extends Component {
 
     filterItem = (item) => {
       if (this.state.type == "All" && this.state.generation == "All") {
-        return item.name.toLowerCase().search(this.state.search) !== -1
+        return item.name.toLowerCase().search(this.state.search) != -1
       }
 
       if (this.state.type == "All" && this.state.generation != "All") {
